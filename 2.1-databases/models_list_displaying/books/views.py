@@ -1,7 +1,3 @@
-from datetime import datetime
-
-from django.core.paginator import Paginator
-from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from books.models import Book
 
@@ -11,7 +7,6 @@ def index(request):
 def books_view(request):
     template = 'books/books_list.html'
     books = Book.objects.all()
-
     context = {
         'books': books,
     }
@@ -43,8 +38,6 @@ def books_view_by_pub_date(request, pub_date:str):
     else:
         next_date = pub_dates_list[num_pub_date_in_list + 1]
         prev_date = pub_dates_list[num_pub_date_in_list - 1]
-
-
 
     context = {
         'books': filtred_books,
