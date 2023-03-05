@@ -25,5 +25,41 @@
       "author": "Стивен Кинг",
       "pub_date": "2015-03-11"
     }
+  },
+  {
+    "model": "books.book",
+    "pk": 4,
+    "fields": {
+      "name": "Оно",
+      "author": "Стивен Кинг",
+      "pub_date": "1995-05-10"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 5,
+    "fields": {
+      "name": "Зелёная миля",
+      "author": "Стивен Кинг",
+      "pub_date": "2005-12-15"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 6,
+    "fields": {
+      "name": "Игра Эндера",
+      "author": "Орсон Скотт Кард",
+      "pub_date": "1999-10-25"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 7,
+    "fields": {
+      "name": "Generation «П»",
+      "author": "В.О. Пелевин",
+      "pub_date": "1999-12-20"
+    }
   }
 ]
