@@ -20,9 +20,7 @@
     <div class="content">
       {% for phone in phones %}
         <div class="phone">
-          <a href={{ phone.get_url }}>
-            <h5>{{ phone.name }}</h5>
-          </a>
+          <a href={{ phone.get_url }}><h5>{{ phone.name }}</h5></a>
           <div class="price">Стоимость: {{ phone.price }} ₽</div>
           <img height="300" src="{{ phone.image }}" alt="{{ phone.name }}"/>
         </div>

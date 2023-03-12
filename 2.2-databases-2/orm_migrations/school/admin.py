@@ -3,11 +3,15 @@ from django.contrib import admin
 from .models import Student, Teacher
 
 
-@admin.register(Student)
+# @admin.register(Student)
 class StudentAdmin(admin.ModelAdmin):
-    pass
+    filter_horizontal = ['teachers']
 
-
-@admin.register(Teacher)
+#
+# @admin.register(Teacher)
 class TeacherAdmin(admin.ModelAdmin):
-    pass
+    list_display = ['name', 'subject']
+
+admin.site.register(Teacher, TeacherAdmin)
+admin.site.register(Student, StudentAdmin)
+
